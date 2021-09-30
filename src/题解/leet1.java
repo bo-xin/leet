@@ -1,17 +1,20 @@
 package 题解;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class leet1 {
-    public int[] twoSum(int[] nums, int target){
-        HashMap<Integer,Integer> indexForNum = new HashMap<>();
-        for(int i = 0;i<nums.length;i++){
-            if(indexForNum.containsKey(target-nums[i])){
-                return new int[]{indexForNum.get(target-nums[i]),i};
-            }else{
-                indexForNum.put(nums[i],i);
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer,Integer> map = new HashMap<>();
+        int n = nums.length;
+        for(int i = 0;i < n;i++){
+            if(map.containsKey(target-nums[i])){
+                return new int[]{map.get(target-nums[i]),i};
+            }else {
+                map.put(nums[i],i);
             }
         }
-        return null;
+        System.out.println();
+        return new int[2];
     }
 }
