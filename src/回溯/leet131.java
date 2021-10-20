@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class leet131 {
+
     List<List<String>> ans = new ArrayList<>();
     List<String> path = new ArrayList<>();
     public List<List<String>> partition(String s) {
