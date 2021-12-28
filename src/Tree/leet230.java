@@ -11,7 +11,6 @@ public class leet230 {
     public void dfs(TreeNode root){
         if(root == null)return;
         dfs(root.left);
-        System.out.println(root.val);
         k_ -=1;
         if(k_ == 0){
             res = root.val;

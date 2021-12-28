@@ -16,10 +16,10 @@ public class leet652 {
         return ans;
     }
     public String travel(TreeNode root){
-        if (root == null) return "#";
+        if(root == null) return "#";
         String left = travel(root.left);
         String right = travel(root.right);
-        String subTree = left+','+right+','+root.val;
+        String  subTree = left+","+right+","+root.val;
         int freq = map.getOrDefault(subTree,0);
         if(freq == 1){
             ans.add(root);

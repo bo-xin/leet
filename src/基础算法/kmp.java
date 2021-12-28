@@ -2,7 +2,7 @@ package 基础算法;
 
 public class kmp {
     public static void main(String[] args) {
-        System.out.println(new kmp().kmp("hello","ll"));
+        System.out.println(new kmp().kmp("hello","f"));
     }
     public int kmp(String src,String dest){
         int[] next = next(dest);
